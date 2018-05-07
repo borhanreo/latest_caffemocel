@@ -2,6 +2,13 @@
 
 Run caffenet on this data
 
+# Setup ProtoBuf
+
+    cd /home/mamun/Development/environment
+    wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
+    tar -xvf protobuf-all-3.5.1.tar.gz 
+    mv protobuf-3.5.1 protobuf
+
 # Make Caffe
 
     cd /home/mamun/Development/environment
