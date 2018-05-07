@@ -14,8 +14,8 @@ unzip train -d .
 unzip test1 -d .
 
 # Format data
-# python create_label_file.py # creates 2 text files with labels for training and validation
-# bash build_datasets.sh # build lmdbs
+python create_label_file.py # creates 2 text files with labels for training and validation
+bash build_datasets.sh # build lmdbs
 
 # Download ImageNet pretrained weights (takes ~20 min)
 # $CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
