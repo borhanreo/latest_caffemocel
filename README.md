@@ -4,8 +4,11 @@ Run caffenet on this data
 
 # Make Caffe
 
+    cd /home/mamun/Development/environment
+    git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
-    # Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
+    
+**Note**: Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
     
 For CPU-only Caffe, uncomment CPU_ONLY := 1 in Makefile.config.
     
