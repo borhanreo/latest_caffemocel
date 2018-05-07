@@ -1,4 +1,5 @@
 #!/bin/bash
+
 CAFFE_ROOT=/home/mamun/Development/environment/caffe
 PROTO_ROOT=/home/mamun/Development/environment/protobuf
 DOG_VS_CAT_FOLDER=$(pwd)
@@ -8,9 +9,9 @@ DOG_VS_CAT_FOLDER=$(pwd)
 #wget https://www.kaggle.com/c/dogs-vs-cats/download/test1.zip
 
 # Unzip train and test data
-#sudo apt-get -y install unzip
-#unzip train -d .
-#unzip test1 -d .
+sudo apt-get -y install unzip
+unzip train -d .
+unzip test1 -d .
 
 # Format data
 # python create_label_file.py # creates 2 text files with labels for training and validation
@@ -23,9 +24,9 @@ DOG_VS_CAT_FOLDER=$(pwd)
 $CAFFE_ROOT/build/tools/caffe train -solver $DOG_VS_CAT_FOLDER/dogvscat_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
 
 # Classify test dataset
-#PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
-#python convert_binaryproto2npy.py
-#python dogvscat_classify.py # Returns prediction.txt (takes ~20 min)
+PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
+python convert_binaryproto2npy.py
+python dogvscat_classify.py # Returns prediction.txt (takes ~20 min)
 
 # A better approach is to train five AlexNets w/init parameters from the same distribution,
 # fine-tuned those five, and compute the average of the five networks
