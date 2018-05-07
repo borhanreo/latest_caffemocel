@@ -3,7 +3,7 @@
 CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
 DOGVSCAT_ROOT = '/home/mamun/Development/python/dogsvscats/'
 MODEL_FILE = DOGVSCAT_ROOT + 'dogvscat_deploy.prototxt' # architecture
-PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_1000.caffemodel' # weights
+PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_76.caffemodel' # weights
 IMAGES_FOLDER = '/home/mamun/Development/python/dogsvscats/test1/'
 PREDICTION_FILE = '/home/mamun/Development/python/dogsvscats/predictions.txt'
 
