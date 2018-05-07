@@ -1,6 +1,6 @@
 # The train/test net protocol buffer definition
-net: "/home/ubuntu/dogvscat/dogvscat_train_val_ft_last_weights.prototxt"
-#net: "/home/ubuntu/dogvscat/dogvscat_train_val_ft_all_weights.prototxt"
+net: "/home/mamun/Development/python/Kaggle-dogs-vs-cats/dogvscat_train_val_ft_last_weights.prototxt"
+#net: "/home/mamun/Development/python/Kaggle-dogs-vs-cats/dogvscat_train_val_ft_all_weights.prototxt"
 
 # Note: 1 iteration = 1 forward pass over all the images in one batch
 

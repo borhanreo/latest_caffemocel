@@ -2,11 +2,11 @@
 # Create the imagenet lmdb inputs
 # N.B. set the path to the imagenet train + val data dirs
 
-CAFFE_ROOT=/home/ubuntu/caffe
-OUTPUT=/home/ubuntu/dogvscat
-LABEL_TEXT_ROOT=/home/ubuntu/dogvscat
-TRAIN_DATA_ROOT=/home/ubuntu/dogvscat/train/
-VAL_DATA_ROOT=/home/ubuntu/dogvscat/train/
+CAFFE_ROOT=/home/mamun/Development/python/caffe
+OUTPUT=$(pwd)
+LABEL_TEXT_ROOT=$(pwd)
+TRAIN_DATA_ROOT=$(pwd)/train/
+VAL_DATA_ROOT=$(pwd)/train/
 
 # Set RESIZE=true to resize the images to 256x256. Leave as false if images have
 # already been resized using another tool.

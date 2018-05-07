@@ -1,11 +1,11 @@
 # Set the right path to your model definition file, pretrained model weights,
 # and the image you would like to classify.
-CAFFE_ROOT = '/home/ubuntu/caffe/'
-DOGVSCAT_ROOT = '/home/ubuntu/dogvscat/'
+CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
+DOGVSCAT_ROOT = '/home/mamun/Development/python/dogsvscats/'
 MODEL_FILE = DOGVSCAT_ROOT + 'dogvscat_deploy.prototxt' # architecture
-PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_3000.caffemodel' # weights
-IMAGES_FOLDER = '/home/ubuntu/dogvscat/test1/'
-PREDICTION_FILE = '/home/ubuntu/dogvscat/predictions.txt'
+PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_1000.caffemodel' # weights
+IMAGES_FOLDER = '/home/mamun/Development/python/dogsvscats/test1/'
+PREDICTION_FILE = '/home/mamun/Development/python/dogsvscats/predictions.txt'
 
 import numpy as np
 
@@ -38,11 +38,11 @@ f = open(PREDICTION_FILE, 'w')
 while i < NUM_IMAGES:
     maximage = min(i + BATCH_SIZE, NUM_IMAGES) - 1
     #print 'Loading images ' + str(i) + ' to ' + str(maximage)
-    print 'Loading images {0} to {1}'.format(i, maximage)
+    print('Loading images {0} to {1}'.format(i, maximage))
     input_images = [ caffe.io.load_image(IMAGES_FOLDER + str(im) + '.jpg') for im in imnums[i : maximage + 1] ]
 
     # Classify images
-    print 'Making predictions'
+    print('Making predictions')
     prediction = net.predict(input_images, 'false')
     
     for j,p in enumerate(prediction):
