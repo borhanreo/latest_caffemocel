@@ -2,6 +2,7 @@
 
 Run caffenet on this data
 
+http://caffe.berkeleyvision.org/tutorial/
 http://caffe.berkeleyvision.org/gathered/examples/mnist.html
 
 # Setup ProtoBuf
