@@ -2,7 +2,9 @@
 
 Run caffenet on this data
 
-http://caffe.berkeleyvision.org/tutorial/
+http://caffe.berkeleyvision.org/tutorial
+https://github.com/philipperemy/yolo-9000
+https://github.com/C-Aniruddh/realtime_object_recognition
 http://caffe.berkeleyvision.org/gathered/examples/mnist.html
 
 # Setup ProtoBuf
