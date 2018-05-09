@@ -22,11 +22,18 @@ def main():
                 fv.write(filename + ' 0\n')
             else:
                 fr.write(filename + ' 0\n')
+
         if filename[0:3] == 'dog':
             if filename[-5] == '2':  # or filename[-5] == '8':
                 fv.write(filename + ' 1\n')
             else:
                 fr.write(filename + ' 1\n')
+
+        if filename[0:5] == 'tiger':
+            if filename[-5] == '2':  # or filename[-5] == '8':
+                fv.write(filename + ' 2\n')
+            else:
+                fr.write(filename + ' 2\n')
 
     fr.close()
     fv.close()
