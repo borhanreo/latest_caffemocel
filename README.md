@@ -29,7 +29,7 @@ For use in python
 
     cd python
     python setup.py install    
-    PROTO_ROOT=/home/mamun/Development/environment/protobuf
+    export PROTO_ROOT=/home/mamun/Development/environment/protobuf
 
 # Make Caffe
 
@@ -63,3 +63,7 @@ Export CaffeRoot
 # Export PythonPath
 
     export PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
+       
+# Execute
+
+    bash dogvscat.sh
