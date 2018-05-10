@@ -21,7 +21,7 @@ DOG_VS_CAT_FOLDER=$(pwd)
 # $CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
 
 # Fine-tune AlexNet architecture (takes ~60 min)
-$CAFFE_ROOT/build/tools/caffe train -solver $DOG_VS_CAT_FOLDER/dogvscat_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
+# $CAFFE_ROOT/build/tools/caffe train -solver $DOG_VS_CAT_FOLDER/dogvscat_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
 
 # Classify test dataset
 export PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH

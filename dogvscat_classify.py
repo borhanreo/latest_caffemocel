@@ -3,7 +3,7 @@
 CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
 DOGVSCAT_ROOT = '/home/mamun/Development/python/dogsvscats/'
 MODEL_FILE = DOGVSCAT_ROOT + 'dogvscat_deploy.prototxt' # architecture
-PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_76.caffemodel' # weights
+PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_3.caffemodel' # weights
 IMAGES_FOLDER = '/home/mamun/Development/python/dogsvscats/test1/'
 PREDICTION_FILE = '/home/mamun/Development/python/dogsvscats/predictions.txt'
 
@@ -44,6 +44,7 @@ while i < NUM_IMAGES:
     # Classify images
     print('Making predictions')
     prediction = net.predict(input_images, 'false')
+    print(prediction)
     
     for j,p in enumerate(prediction):
         f.write(str(imnums[j]) + ",")
