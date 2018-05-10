@@ -17,23 +17,29 @@ def main():
 
     filenames = os.listdir(IMAGE_FOLDER)
     for filename in filenames:
-        if filename[0:3] == 'cat':
+        if filename[0:4] == 'tree':
             if filename[-5] == '2':  # or filename[-5] == '8':
                 fv.write(filename + ' 0\n')
             else:
                 fr.write(filename + ' 0\n')
 
-        if filename[0:3] == 'dog':
+        if filename[0:5] == 'tower':
             if filename[-5] == '2':  # or filename[-5] == '8':
                 fv.write(filename + ' 1\n')
             else:
                 fr.write(filename + ' 1\n')
 
-        if filename[0:5] == 'tiger':
+        if filename[0:8] == 'building':
             if filename[-5] == '2':  # or filename[-5] == '8':
                 fv.write(filename + ' 2\n')
             else:
                 fr.write(filename + ' 2\n')
+
+        if filename[0:9] == 'billboard':
+            if filename[-5] == '2':  # or filename[-5] == '8':
+                fv.write(filename + ' 3\n')
+            else:
+                fr.write(filename + ' 3\n')
 
     fr.close()
     fv.close()

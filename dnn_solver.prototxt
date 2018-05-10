@@ -1,6 +1,6 @@
 # The train/test net protocol buffer definition
-net: "/home/mamun/Development/python/dogsvscats/dogvscat_train_val_ft_last_weights.prototxt"
-#net: "/home/mamun/Development/python/dogsvscats/dogvscat_train_val_ft_all_weights.prototxt"
+net: "/home/mamun/Development/python/caffemodel/train_val_ft_last_weights.prototxt"
+#net: "/home/mamun/Development/python/caffemodel/train_val_ft_all_weights.prototxt"
 
 # Note: 1 iteration = 1 forward pass over all the images in one batch
 
@@ -9,7 +9,7 @@ test_interval: 10
 
 # test_iter specifies how many forward passes the validation test should carry out
 #  a good number is num_val_imgs / batch_size (see batch_size in Data layer in phase TEST in train_test.prototxt)
-test_iter: 3
+test_iter: 4
 
 # The base learning rate, momentum and the weight decay of the network.
 base_lr: 0.001
@@ -33,7 +33,7 @@ stepsize: 500 # Drop the learning rate in steps by a factor of gamma every steps
 display: 50 
 
 # The maximum number of iterations
-max_iter: 3
+max_iter: 4
 
 # snapshot intermediate results, i.e., every 1000 iterations it saves a snapshot of the weights
 snapshot: 1000

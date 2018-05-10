@@ -1,11 +1,11 @@
 # Set the right path to your model definition file, pretrained model weights,
 # and the image you would like to classify.
 CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
-DOGVSCAT_ROOT = '/home/mamun/Development/python/dogsvscats/'
-MODEL_FILE = DOGVSCAT_ROOT + 'dogvscat_deploy.prototxt' # architecture
-PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_3.caffemodel' # weights
-IMAGES_FOLDER = '/home/mamun/Development/python/dogsvscats/test1/'
-PREDICTION_FILE = '/home/mamun/Development/python/dogsvscats/predictions.txt'
+DOGVSCAT_ROOT = '/home/mamun/Development/python/caffemodel/'
+MODEL_FILE = DOGVSCAT_ROOT + 'dnn_deploy.prototxt' # architecture
+PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_4.caffemodel' # weights
+IMAGES_FOLDER = '/home/mamun/Development/python/caffemodel/test1/'
+PREDICTION_FILE = '/home/mamun/Development/python/caffemodel/predictions.txt'
 
 import numpy as np
 
