@@ -4,11 +4,6 @@ export CAFFE_ROOT=/home/mamun/Development/environment/caffe
 export PROTO_ROOT=/home/mamun/Development/environment/protobuf
 export APP_FOLDER=$(pwd)
 
-# Unzip train and test data
-# sudo apt-get -y install unzip
-# unzip train -d .
-# unzip test2 -d .
-
 # Format data
 python create_label_file.py # creates 2 text files with labels for training and validation
 bash build_datasets.sh # build lmdbs
