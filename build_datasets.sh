@@ -30,7 +30,7 @@ GLOG_logtostderr=1 $TOOLS/convert_imageset \
     --shuffle \
     $TRAIN_DATA_ROOT \
     $LABEL_TEXT_ROOT/train.txt \
-    $OUTPUT/dogvscat_train_lmdb
+    $OUTPUT/dnn_train_lmdb
 
 echo "Creating val lmdb..."
 
@@ -40,11 +40,11 @@ GLOG_logtostderr=1 $TOOLS/convert_imageset \
     --shuffle \
     $VAL_DATA_ROOT \
     $LABEL_TEXT_ROOT/val.txt \
-    $OUTPUT/dogvscat_val_lmdb
+    $OUTPUT/dnn_val_lmdb
 
 echo "Compute image mean..."
 
-$TOOLS/compute_image_mean $OUTPUT/dogvscat_train_lmdb \
-  $OUTPUT/dogvscat_mean.binaryproto
+$TOOLS/compute_image_mean $OUTPUT/dnn_train_lmdb \
+  $OUTPUT/dnn_mean.binaryproto
 
 echo "Done."

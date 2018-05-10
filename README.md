@@ -66,7 +66,7 @@ Export CaffeRoot
        
 # Execute
 
-    bash dogvscat.sh
+    bash kickstart.sh
     
 # Add new object type
 

@@ -37,7 +37,7 @@ max_iter: 4
 
 # snapshot intermediate results, i.e., every 1000 iterations it saves a snapshot of the weights
 snapshot: 1000
-snapshot_prefix: "dogvscat"
+snapshot_prefix: "dnn"
 
 # solver mode: CPU or GPU
 solver_mode: CPU

@@ -1,9 +1,9 @@
 # Set the right path to your model definition file, pretrained model weights,
 # and the image you would like to classify.
 CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
-DOGVSCAT_ROOT = '/home/mamun/Development/python/caffemodel/'
-MODEL_FILE = DOGVSCAT_ROOT + 'dnn_deploy.prototxt' # architecture
-PRETRAINED = DOGVSCAT_ROOT + 'dogvscat_iter_4.caffemodel' # weights
+APP_ROOT = '/home/mamun/Development/python/caffemodel/'
+MODEL_FILE = APP_ROOT + 'dnn_deploy.prototxt' # architecture
+PRETRAINED = APP_ROOT + 'dnn_iter_4.caffemodel' # weights
 IMAGES_FOLDER = '/home/mamun/Development/python/caffemodel/test1/'
 PREDICTION_FILE = '/home/mamun/Development/python/caffemodel/predictions.txt'
 
@@ -20,7 +20,7 @@ import caffe
 #  raw scaling (max value in the images in order to scale the CNN input to [0 1])
 caffe.set_mode_cpu()
 net = caffe.Classifier(MODEL_FILE, PRETRAINED,
-                       mean=np.load(DOGVSCAT_ROOT + 'dogvscat_mean.npy').mean(1).mean(1),
+                       mean=np.load(APP_ROOT + 'dnn_mean.npy').mean(1).mean(1),
                        channel_swap=(2,1,0),
                        raw_scale=255,
                        image_dims=(256, 256))
