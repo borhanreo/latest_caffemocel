@@ -70,5 +70,6 @@ Export CaffeRoot
     
 # Add new object type
 
+Add condtion in **create_label_file.py** for new object type.
 In the weights.prototxt and deploy.prototxt increase **num_output** count by one under last **inner_product_param** for addition of each new object type. 
 In both file the **num_output** must be same.
