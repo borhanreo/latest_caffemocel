@@ -40,6 +40,8 @@ For use in python
 **Note**: Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
     
 For CPU-only Caffe, uncomment CPU_ONLY := 1 in Makefile.config.
+
+## Ubuntu
     
     make clean
     make all
@@ -59,6 +61,21 @@ To MATLAB wrappers do
 Export CaffeRoot
 
     export CAFFE_ROOT=/home/mamun/Development/environment/caffe
+    
+## Windows
+
+Install CMake
+
+Install Chocolatey
+
+    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    choco upgrade chocolatey
+
+Install Ninja
+
+    choco install ninja
+    
+Install c compiler http://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/
 
 # Export PythonPath
 
