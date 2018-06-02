@@ -75,7 +75,10 @@ Install Ninja
 
     choco install ninja
     
-Install c compiler http://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/
+Install Visual Studio 2015 with C++ language and tools and in the caffe root
+
+    git checkout windows
+    scripts\build_win.cmd
 
 # Export PythonPath
 
