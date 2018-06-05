@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 227
-    mean_file: "/home/mamun/Development/python/caffemodel/dnn_mean.binaryproto"
+    mean_file: "/home/mamun/Idea/python/caffemodel/dnn_mean.binaryproto"
   }
   data_param {
-    source: "/home/mamun/Development/python/caffemodel/dnn_train_lmdb"
+    source: "/home/mamun/Idea/python/caffemodel/dnn_train_lmdb"
     batch_size: 10
     backend: LMDB
   }
@@ -29,10 +29,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 227
-    mean_file: "/home/mamun/Development/python/caffemodel/dnn_mean.binaryproto"
+    mean_file: "/home/mamun/Idea/python/caffemodel/dnn_mean.binaryproto"
   }
   data_param {
-    source: "/home/mamun/Development/python/caffemodel/dnn_val_lmdb"
+    source: "/home/mamun/Idea/python/caffemodel/dnn_val_lmdb"
     batch_size: 1
     backend: LMDB
   }

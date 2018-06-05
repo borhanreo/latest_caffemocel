@@ -11,7 +11,7 @@ Run caffenet on this data
 
 Download Protobuf
 
-    cd /home/mamun/Development/environment
+    cd /home/mamun/Idea/environment
     wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
     tar -xvf protobuf-all-3.5.1.tar.gz 
     mv protobuf-3.5.1 protobuf
@@ -29,11 +29,11 @@ For use in python
 
     cd python
     python setup.py install    
-    export PROTO_ROOT=/home/mamun/Development/environment/protobuf
+    export PROTO_ROOT=/home/mamun/Idea/env/protobuf
 
 # Make Caffe
 
-    cd /home/mamun/Development/environment
+    cd /home/mamun/Idea/environment
     git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
     
@@ -60,7 +60,7 @@ To MATLAB wrappers do
 
 Export CaffeRoot
 
-    export CAFFE_ROOT=/home/mamun/Development/environment/caffe
+    export CAFFE_ROOT=/home/mamun/Idea/env/caffe
     
 ## Windows
 

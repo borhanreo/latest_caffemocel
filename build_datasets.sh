@@ -2,7 +2,7 @@
 # Create the imagenet lmdb inputs
 # N.B. set the path to the imagenet train + val data dirs
 
-CAFFE_ROOT=/home/mamun/Development/environment/caffe
+CAFFE_ROOT=/home/mamun/Idea/env/caffe
 OUTPUT=$(pwd)
 LABEL_TEXT_ROOT=$(pwd)
 TRAIN_DATA_ROOT=$(pwd)/train/

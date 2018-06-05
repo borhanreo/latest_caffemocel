@@ -1,6 +1,6 @@
 # The train/test net protocol buffer definition
-net: "/home/mamun/Development/python/caffemodel/train_val_ft_last_weights.prototxt"
-#net: "/home/mamun/Development/python/caffemodel/train_val_ft_all_weights.prototxt"
+net: "/home/mamun/Idea/python/caffemodel/train_val_ft_last_weights.prototxt"
+#net: "/home/mamun/Idea/python/caffemodel/train_val_ft_all_weights.prototxt"
 
 # Note: 1 iteration = 1 forward pass over all the images in one batch
 

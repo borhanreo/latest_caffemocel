@@ -1,11 +1,11 @@
 # Set the right path to your model definition file, pretrained model weights,
 # and the image you would like to classify.
-CAFFE_ROOT = '/home/mamun/Development/environment/caffe/'
-APP_ROOT = '/home/mamun/Development/python/caffemodel/'
+CAFFE_ROOT = '/home/mamun/Idea/env/caffe/'
+APP_ROOT = '/home/mamun/Idea/python/caffemodel/'
 MODEL_FILE = APP_ROOT + 'dnn_deploy.prototxt' # architecture
 PRETRAINED = APP_ROOT + 'dnn_iter_4.caffemodel' # weights
-IMAGES_FOLDER = '/home/mamun/Development/python/caffemodel/test1/'
-PREDICTION_FILE = '/home/mamun/Development/python/caffemodel/predictions.txt'
+IMAGES_FOLDER = '/home/mamun/Idea/python/caffemodel/test1/'
+PREDICTION_FILE = '/home/mamun/Idea/python/caffemodel/predictions.txt'
 
 import numpy as np
 
