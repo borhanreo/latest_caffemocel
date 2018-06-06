@@ -31,7 +31,20 @@ For use in python
     python setup.py install    
     export PROTO_ROOT=/home/mamun/Idea/env/protobuf
 
-# Make Caffe
+# Install Caffe
+
+## Ubuntu (>= 17.04)
+
+    sudo apt install caffe-cpu
+
+From https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
+
+    wget wget dl.caffe.berkeleyvision.org/bvlc_reference_caffenet.caffemodel
+
+## Ubuntu (< 17.04)
+
+    sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+    sudo apt-get install --no-install-recommends libboost-all-dev
 
     cd /home/mamun/Idea/environment
     git clone https://github.com/BVLC/caffe
@@ -40,8 +53,6 @@ For use in python
 **Note**: Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
     
 For CPU-only Caffe, uncomment CPU_ONLY := 1 in Makefile.config.
-
-## Ubuntu
     
     make clean
     make all
