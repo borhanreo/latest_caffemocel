@@ -46,7 +46,7 @@ From https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
     sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
     sudo apt-get install --no-install-recommends libboost-all-dev
 
-    cd /home/mamun/Idea/environment
+    cd /home/mamun/Idea/env
     git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
     
