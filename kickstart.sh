@@ -9,11 +9,10 @@ python create_label_file.py # creates 2 text files with labels for training and 
 bash build_datasets.sh # build lmdbs
 
 # Download ImageNet pretrained weights (takes ~20 min)
-# $CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
-wget dl.caffe.berkeleyvision.org/bvlc_reference_caffenet.caffemodel
+$CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
 
 # Fine-tune AlexNet architecture (takes ~60 min)
-# caffe train -solver $APP_FOLDER/dnn_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
+# $CAFFE_ROOT/build/tools/caffe train -solver $APP_FOLDER/dnn_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
 
 # Classify test dataset
 # export PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
