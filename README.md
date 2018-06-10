@@ -63,7 +63,7 @@ Install more dependancies
     sudo apt-get install libgoogle-glog-dev
     sudo apt-get install liblmdb-dev
     sudo apt-get install libopenblas-dev
-    sudo apt-get install python3-opencv
+    sudo apt-get install python-opencv
     sudo apt-get install libatlas-base-dev
     
 **Note**: Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
@@ -109,6 +109,8 @@ Install Visual Studio 2015 with C++ language and tools and in the caffe root
 
 # Export PythonPath
 
+    cd python
+    sudo pip install -r requirements.txt
     export PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
        
 # Execute
