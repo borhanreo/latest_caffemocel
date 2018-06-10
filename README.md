@@ -28,6 +28,7 @@ Install Protobuf
 For use in python
 
     cd python
+    sudo apt-get install -y python-setuptools
     python setup.py install    
     export PROTO_ROOT=/home/mamun/Idea/env/protobuf
 
@@ -49,6 +50,21 @@ From https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
     cd /home/mamun/Idea/env
     git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
+
+install libhdf5-dev
+open Makefile.config, locate line containing LIBRARY_DIRS and append /usr/lib/x86_64-linux-gnu/hdf5/serial
+locate INCLUDE_DIRS and append /usr/include/hdf5/serial/ (per this SO answer)
+Uncomment if you're using OpenCV 3 
+OPENCV_VERSION := 3
+
+Install more dependancies
+
+    sudo apt-get install libgflags-dev
+    sudo apt-get install libgoogle-glog-dev
+    sudo apt-get install liblmdb-dev
+    sudo apt-get install libopenblas-dev
+    sudo apt-get install python3-opencv
+    sudo apt-get install libatlas-base-dev
     
 **Note**: Adjust Makefile.config (for example, if using Anaconda Python, or if cuDNN is desired)
     
