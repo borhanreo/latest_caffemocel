@@ -29,6 +29,7 @@ For use in python
 
     cd python
     sudo apt-get install -y python-setuptools
+    sudo apt-get install build-essential
     sudo python setup.py install
     export PROTO_ROOT=/home/mamun/Idea/env/protobuf
 
