@@ -51,15 +51,20 @@ From https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
     git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
 
-- install libhdf5-dev
-- open Makefile.config, locate line containing LIBRARY_DIRS and append /usr/lib/x86_64-linux-gnu/hdf5/serial
-- locate INCLUDE_DIRS and append /usr/include/hdf5/serial/ (per this SO answer)
+- open Makefile.config
+- locate INCLUDE_DIRS and append /usr/include/hdf5/serial (per this SO answer)
+- locate line containing LIBRARY_DIRS and append /usr/lib/x86_64-linux-gnu/hdf5/serial
+- Uncomment to build without GPU support
+
+    CPU_ONLY := 1
+
 - Uncomment if you're using OpenCV 3
 
     OPENCV_VERSION := 3
 
 Install more dependancies
 
+    sudo apt-get install libhdf5-dev
     sudo apt-get install libgflags-dev
     sudo apt-get install libgoogle-glog-dev
     sudo apt-get install liblmdb-dev
