@@ -51,11 +51,12 @@ From https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
     git clone https://github.com/BVLC/caffe
     cp Makefile.config.example Makefile.config
 
-install libhdf5-dev
-open Makefile.config, locate line containing LIBRARY_DIRS and append /usr/lib/x86_64-linux-gnu/hdf5/serial
-locate INCLUDE_DIRS and append /usr/include/hdf5/serial/ (per this SO answer)
-Uncomment if you're using OpenCV 3 
-OPENCV_VERSION := 3
+- install libhdf5-dev
+- open Makefile.config, locate line containing LIBRARY_DIRS and append /usr/lib/x86_64-linux-gnu/hdf5/serial
+- locate INCLUDE_DIRS and append /usr/include/hdf5/serial/ (per this SO answer)
+- Uncomment if you're using OpenCV 3
+
+    OPENCV_VERSION := 3
 
 Install more dependancies
 
