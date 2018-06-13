@@ -11,7 +11,7 @@ Run caffenet on this data
 
 Download Protobuf
 
-    cd /home/mamun/Idea/environment
+    cd /home/mamun/Idea/env
     wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
     tar -xvf protobuf-all-3.5.1.tar.gz 
     mv protobuf-3.5.1 protobuf
@@ -29,7 +29,7 @@ For use in python
 
     cd python
     sudo apt-get install -y python-setuptools
-    python setup.py install    
+    sudo python setup.py install
     export PROTO_ROOT=/home/mamun/Idea/env/protobuf
 
 # Install Caffe
