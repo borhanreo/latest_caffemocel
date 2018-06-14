@@ -91,9 +91,28 @@ To MATLAB wrappers do
     make matcaffe
 
 **Note**: Be sure to set your MATLAB and Python paths in Makefile.config first!
-## install caffemodel requirement neew to pip always python2 not python3
+## install caffemodel requirement need to pip always python2 not python3
     cd home/borhan//Idea/env/caffe/python 
     sudo pip install -r requirements.txt 
+    cd /home/borhan/Idea/python/caffemodel
+### There are three step setup 
+#### 1 step
+    bash kickstart.sh
+#### 2-A step  comment few line
+    ####comment python create_label_file.py # creates 2 text files with labels for training and validation
+    ####comment CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
+#### 2-B step unconnent few line and
+    $CAFFE_ROOT/build/tools/caffe train -solver $APP_FOLDER/dnn_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
+    bash kickstart.sh
+#### 3  step comment few line
+    ####comment python create_label_file.py # creates 2 text files with labels for training and validation
+    ####comment CAFFE_ROOT/scripts/download_model_binary.py $CAFFE_ROOT/models/bvlc_reference_caffenet
+    #### $CAFFE_ROOT/build/tools/caffe train -solver $APP_FOLDER/dnn_solver.prototxt -weights $CAFFE_ROOT/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel
+#### 3 step Uncomment few line 
+     export PYTHONPATH=$CAFFE_ROOT/python:$PROTO_ROOT/python:$PYTHONPATH
+     python convert_binaryproto2npy.py
+     python dnn_classify.py # Returns prediction.txt (takes ~20 min)
+     bash kickstart.sh
 Export CaffeRoot
 
     export CAFFE_ROOT=/home/mamun/Idea/env/caffe
