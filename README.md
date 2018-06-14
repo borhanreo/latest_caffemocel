@@ -91,7 +91,9 @@ To MATLAB wrappers do
     make matcaffe
 
 **Note**: Be sure to set your MATLAB and Python paths in Makefile.config first!
-
+## install caffemodel requirement neew to pip always python2 not python3
+    cd home/borhan//Idea/env/caffe/python 
+    sudo pip install -r requirements.txt 
 Export CaffeRoot
 
     export CAFFE_ROOT=/home/mamun/Idea/env/caffe
